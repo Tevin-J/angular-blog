@@ -5,7 +5,7 @@ import {Observable, Subject} from 'rxjs';
 import {environment} from '../../../../environments/environment';
 import {catchError, tap} from 'rxjs/operators';
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class AuthService {
   constructor(private http: HttpClient) {}
 
